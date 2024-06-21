@@ -9,7 +9,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="row">
+    <div className="row" style={{maxWidth:"90vw", margin:"0 auto"}}>
       {data.map((el) => (
         <MemeCard img={el.url} title={el.name} />
       ))}
